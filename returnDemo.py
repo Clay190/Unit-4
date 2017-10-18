@@ -1,1 +1,15 @@
+#Clay Kynor
+#10/18/17
+#returnDemo.py - Learning how to use return
 
+from random import randint
+
+def randevenint(low,high):
+    return(randint(low,high)
+    
+    
+r1 = randevenint(1,100)
+r2 = randevenint(1,100)
+r3 = randevenint(1,100)
+
+print(r1,r2,r3)
