@@ -10,6 +10,7 @@ ROWS = 26
 COLS = 50
 CELL_SIZE = 20
 
+#This moves the monkey right, left, up, and down. After it does that, it moves the banana and updates the score if the monkey is on the banana
 def moveRight(event):
     if monkey.x < (COLS-1)*CELL_SIZE:
         monkey.x += CELL_SIZE
@@ -38,21 +39,26 @@ def moveDown(event):
             moveBanana()
             updateScore()
 
+#Moves the banana to a random location
 def moveBanana():
     banana.x = randint(0,COLS-1)*CELL_SIZE
     banana.y = randint(0,ROWS-1)*CELL_SIZE
+    data['frames'] = 0
 
+#updates the score
 def updateScore():
     data['score'] += 10
     data['scoreText'].destroy()
     scoreBox = TextAssset('Score = '+str(data['score']))
     data['scoreText'] = Sprite(scoreBox,(0,ROWS*CeLL_SIZE))
 
+#keeps track of how many frames have passed and moves banana is more than 149 have passed
 def step():
     data['frames'] += 1
-    if data['frames'] == 250:
+    if data['frames'] == 149:
         moveBanana()
 
+#runs the game
 if __name__ == '__main__':
     
     data = {}
