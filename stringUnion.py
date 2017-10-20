@@ -3,9 +3,14 @@
 #stringUnion.py
 
 def stringUnion(word1,word2):
+    total = " "
     for ch in word1:
-        print(ch)
+        if not ch in total:
+            total += ch
     for ch in word2:
-        print(ch)
-
-stringUnion(cap,jas)
+        if not ch in total:
+            total += ch
+    return total
+    
+var = stringUnion("Mississippi","Pennsylvania")
+print(var)
