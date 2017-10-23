@@ -6,7 +6,6 @@ def isPrime(num1):
     for i in range(2,(num1)):
         if num1%i==0:
             return print("False")
-        else:
-            return print("True")
+        print("True")
 
-isPrime(3)
+isPrime(9)
