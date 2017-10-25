@@ -12,9 +12,6 @@ def distance(x1,y1,x2,y2,x3,y3):
     return b
     return c
 
-s = distance(3,4,3-5,2,-7,1)
+distance(3,4,3-5,2,-7,1)
 
-
-s = (1/2)*(a+b+c)
-
-print(s)
+print((11/2)*(a+b+c))
