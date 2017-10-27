@@ -11,5 +11,4 @@ def calc(x,y):
         else:
             n=-1
             
-            
-defcalc(10,5)
+calc(64,24)
