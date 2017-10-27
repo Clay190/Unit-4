@@ -48,7 +48,10 @@ def step():
         moveBanana()
 
 yellow = Color(0xFFFF00,1)
+green = Color(0x00FF00,1)
 
+jungleBox = RectangleAsset(COLS*CELL_SIZE,ROWS*CELL_SIZE,LineStyle(1,green),green)
+sun = CircleAsset(
 
 Sprite(jungleBox)
 monkey = Sprite(sun)
