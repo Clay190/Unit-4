@@ -2,10 +2,11 @@
 #10/30/17
 #quiz4.py
 
-def pri(number):
-    print("Computer Science is Awesome"*number)
+def csia():
+    print("Computer Science is Awesome"*5)
+
+
     
     
     
-    
-pri(5)
+csia()
